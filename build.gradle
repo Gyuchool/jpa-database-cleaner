@@ -5,9 +5,8 @@ plugins {
     id 'maven-publish'
 }
 
-
 group = 'com.github.Gyuchool'
-version = '0.2.0'
+version = '0.2.1'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -17,6 +16,9 @@ java {
 publishing {
     publications {
         mavenJava(MavenPublication) {
+            groupId = project.group
+            artifactId = 'jpa-database-cleaner'
+            version = project.version
             versionMapping {
                 usage('java-api') {
                     fromResolutionOf('runtimeClasspath')
@@ -25,12 +27,6 @@ publishing {
                     fromResolutionResult()
                 }
             }
-        }
-
-        maven(MavenPublication) {
-            groupId = 'com.github.Gyuchool'
-            artifactId = 'jpa-database-cleaner'
-            version = '0.2.0'
         }
     }
 }
