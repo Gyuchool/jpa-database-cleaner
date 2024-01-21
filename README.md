@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/Gyuchool/jpa-database-cleaner.svg)](https://jitpack.io/#Gyuchool/jpa-database-cleaner)
+
 # database-cleaner
 
 만든 계기는 스프링 테스트에서 @Transactional을 통한 롤백이 비즈니스 로직 검증에 영향을 미치기에 오직 롤백을 위한 데이터베이스 클리너를 만들게 되었다.
