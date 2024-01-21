@@ -5,8 +5,9 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'com.gyucheol'
-version = '0.1.4'
+
+group = 'com.github.Gyuchool'
+version = '0.2.0'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -27,9 +28,9 @@ publishing {
         }
 
         maven(MavenPublication) {
-            groupId = 'com.gyucheol.jpadatabasecleaner'
+            groupId = 'com.github.Gyuchool'
             artifactId = 'jpa-database-cleaner'
-            version = '0.1.4'
+            version = '0.2.0'
         }
     }
 }
@@ -57,7 +58,6 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
 
     testImplementation 'com.h2database:h2:2.2.220'
-
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
