@@ -6,7 +6,12 @@ plugins {
 }
 
 group = 'com.github.Gyuchool'
-version = '0.2.1'
+version = '0.2.2'
+
+wrapper {
+    gradleVersion = "8.5"
+    distributionType = Wrapper.DistributionType.ALL
+}
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -39,7 +44,6 @@ configurations {
 
 repositories {
     mavenCentral()
-    maven { url "https://jitpack.io" }
 }
 
 dependencyManagement {
